@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CompAComponent } from './comp-a/comp-a.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { ZiButtonComponent } from './zi-button/zi-button.component';
 
 @NgModule({
-  declarations: [AppComponent, CompAComponent],
+  declarations: [AppComponent, CompAComponent, ZiButtonComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -17,7 +18,6 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatButtonModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

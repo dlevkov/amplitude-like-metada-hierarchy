@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CompAComponent } from './comp-a.component';
+import { ZiButtonComponent } from './zi-button.component';
 
-describe('CompAComponent', () => {
-  let component: CompAComponent;
-  let fixture: ComponentFixture<CompAComponent>;
+describe('ZiButtonComponent', () => {
+  let component: ZiButtonComponent;
+  let fixture: ComponentFixture<ZiButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CompAComponent ]
+      declarations: [ ZiButtonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CompAComponent);
+    fixture = TestBed.createComponent(ZiButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

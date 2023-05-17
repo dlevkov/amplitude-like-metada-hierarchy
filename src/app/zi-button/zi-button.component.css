@@ -1,0 +1,4 @@
+:host :ng-deep .zi-button {
+  background-color: red;
+  color: white;
+}
