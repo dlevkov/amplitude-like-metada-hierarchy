@@ -8,9 +8,10 @@ import { CompAComponent } from './comp-a/comp-a.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ZiButtonComponent } from './zi-button/zi-button.component';
+import { AmplitudeIdDirective } from './amplitude-id.directive';
 
 @NgModule({
-  declarations: [AppComponent, CompAComponent, ZiButtonComponent],
+  declarations: [AppComponent, CompAComponent, ZiButtonComponent, AmplitudeIdDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,

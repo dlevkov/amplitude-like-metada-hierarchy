@@ -15,6 +15,6 @@ export class ZiButtonComponent {
 
   }
   click() {
-    this.logicService.buildEventMessage('')
+    this.logicService.buildEventMessage("i'm wrapped button")
   }
 }

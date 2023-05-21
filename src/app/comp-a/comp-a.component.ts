@@ -15,7 +15,7 @@ export class CompAComponent {
   click_basic() {
     console.log(this.subTitle);
   }
-  click_reroute() {
-    this.router.navigateByUrl('b');
+  click_reroute(route: 'a' | 'b') {
+    this.router.navigateByUrl(route);
   }
 }

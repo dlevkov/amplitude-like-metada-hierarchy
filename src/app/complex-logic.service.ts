@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { DomListenerService } from './dom-listener.service';
 
 @Injectable({
@@ -18,8 +18,14 @@ export class ComplexLogicService {
     return `${message}: ${params.join(',')}`;
   }
   logAutoEvent() {
-    this.domService.DOMEvents$().subscribe((evt: PointerEvent) => {
-      console.log(evt.target);
+    this.domService.DOMEvents$().subscribe((evt) => {
+      const message = this.amplitudeStrategy(evt, this.route.snapshot);
+      console.log(message);
     });
+  }
+  amplitudeStrategy(evt: any, snapshot: ActivatedRouteSnapshot): string {
+    console.log({ snapshot });
+    console.log({ evt });
+    return '';
   }
 }
